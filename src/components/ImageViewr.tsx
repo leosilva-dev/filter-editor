@@ -1,5 +1,6 @@
 import { Button } from '@material-ui/core'
 import styles from '../styles/img.module.css'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 export function ImageViewr() {
 
@@ -21,8 +22,8 @@ export function ImageViewr() {
                     onChange={loadFile}
                 />
                 <label htmlFor="contained-button-file">
-                    <Button variant="contained" color="primary" component="span">
-                        Upload
+                    <Button variant="contained" color="primary" component="span" startIcon={<ArrowUpwardIcon />} style={{ textTransform: 'none' }}>
+                        Upload image to edit
                     </Button>
                 </label>
             </div>
