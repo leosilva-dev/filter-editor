@@ -16,14 +16,14 @@ export default function Home() {
 
       <Grid container spacing={1}>
 
-        <Grid item alignItems="stretch" xs={4} spacing={3} style={{ border: "0px solid black" }}>
+        <Grid item xs={4} style={{ border: "0px solid black" }}>
         </Grid>
 
         <Grid container item justify="center" xs={4} spacing={3} style={{ border: "0px solid black" }}>
           <ImageViewr />
         </Grid>
 
-        <Grid item alignItems="stretch" xs={4} spacing={3} style={{ border: "0px solid black" }}>
+        <Grid item xs={4} style={{ border: "0px solid black" }}>
         </Grid>
 
 

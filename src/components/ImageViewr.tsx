@@ -4,14 +4,13 @@ import styles from '../styles/img.module.css'
 export function ImageViewr() {
 
     function loadFile(event: any) {
-        const img = document.getElementById('imgToEdit')
-        img.src = URL.createObjectURL(event.target.files[0])
+        const img = document.getElementById('imgToEdit').setAttribute('src', URL.createObjectURL(event.target.files[0]))
     }
 
     return (
         <div>
             <div>
-                <img id="imgToEdit" className={styles.filter} width="720" />
+                <img id="imgToEdit" className={styles.filter} width="720" src="" />
             </div>
             <div>
                 <input
@@ -19,7 +18,6 @@ export function ImageViewr() {
                     id="contained-button-file"
                     type="file"
                     style={{ display: 'none' }}
-                    name="image"
                     onChange={loadFile}
                 />
                 <label htmlFor="contained-button-file">
